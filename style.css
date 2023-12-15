@@ -15,9 +15,9 @@ body {
 }
 /* Navbar  */
 .nav {
-  width: 100vw;
+  width: 100%;
   display: grid;
-  padding-left: 35px;
+  padding-left: 65px;
   height: 50px;
   place-items: center;
   box-sizing: border-box;
@@ -37,7 +37,7 @@ body {
   font-size: 30px;
   width: 400px;
   margin-top: 40px;
-  padding-left: 35px;
+  padding-left: 65px;
   font-weight: 500;
 }
 
@@ -48,14 +48,17 @@ body {
 }
 
 .hr-line {
-  width: 95vw;
+  width: 90%;
   height: 0px;
-  margin: 20px auto 20px;
+  margin: 20px 20px 20px 64px;
   border: 1px solid grey;
   opacity: 0.2;
 }
 
 .card {
+  gap: 15px;
+  box-sizing: border-box;
+  padding: 0px 60px;
   display: grid;
   place-items: center;
   grid-template-columns: auto auto auto;
@@ -71,7 +74,6 @@ body {
   width: 100%;
 }
 .project-name {
-  margin-left: 10px;
   padding: 10px 0px;
   font-family: sans-serif;
   font-size: x-large;
@@ -79,21 +81,16 @@ body {
 }
 
 .para {
-  width: 90%;
+  padding: 10px 0px;
+  width: 100%;
   font-size: small;
-  margin-left: 10px;
 }
 
 .footer {
+  box-sizing: border-box;
   text-align: start;
-  padding-left: 78px;
-  padding: 20px 20px 20px 35px;
-}
 
-.bottom-hr {
-  width: 95%;
-  margin: 20px 32px 40px;
-  opacity: 0.2;
+  padding: 20px 20px 20px 18px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 475px) {
@@ -117,11 +114,12 @@ body {
     font-size: 20px;
   }
   .card {
+    padding: 0px;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto auto auto auto auto;
   }
   .card div {
-    height: 395px;
+    height: fit-content;
     width: 90%;
     row-gap: 5px;
   }
@@ -233,7 +231,7 @@ body {
   }
 
   .nav {
-    width: 100vw;
+    width: 100%;
     display: grid;
     padding-left: 25px;
     height: 50px;
@@ -288,9 +286,10 @@ body {
 }
 @media screen and (min-width: 767px) and (max-width: 1080px) {
   .nav {
-    width: 100vw;
+    width: 100%;
+    box-sizing: border-box;
     display: grid;
-    padding-left: 35px;
+    padding-left: 58px;
     height: 50px;
     place-items: center;
     box-sizing: border-box;
@@ -298,13 +297,18 @@ body {
     color: #727272;
     grid-template-columns: 80px 80px 80px 80px;
   }
-
   .card {
-    padding-left: 30px;
+    gap: 15px;
+    box-sizing: border-box;
+    padding: 0px 60px;
     display: grid;
     place-items: center;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
+  }
+
+  .page-heading {
+    padding-left: 58px;
   }
 
   .card-image {
@@ -324,6 +328,14 @@ body {
     color: #57a2d1;
   }
 
+  .hr-line {
+    width: 87%;
+    height: 0px;
+    margin: 20px auto 20px;
+    border: 1px solid grey;
+    opacity: 0.2;
+  }
+
   .para {
     width: 90%;
     margin-left: 1px;
@@ -337,10 +349,10 @@ body {
 
 @media screen and (min-width: 1081px) and (max-width: 1280px) {
   .nav {
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
     display: grid;
-    padding-left: 43px;
+    padding-left: 58px;
     height: 50px;
     place-items: center;
     box-sizing: border-box;
@@ -350,26 +362,23 @@ body {
   }
 
   .hr-line {
-    width: 96vw;
+    width: 89%;
     height: 0px;
-    margin: 20px auto 20px;
+    margin: 20px 0px 20px 60px;
     border: 1px solid grey;
     opacity: 0.2;
-  }
-  .bottom-hr {
-    width: 96vw;
-    margin: 20px 32px 40px;
-    opacity: 0.5;
   }
 
   .page-heading {
     margin-top: 60px;
-    padding-left: 43px;
+    padding-left: 58px;
   }
 
   .card {
-    padding-left: 30px;
+    box-sizing: border-box;
+    padding: 0px 60px;
     display: grid;
+    gap: 20px;
     place-items: center;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
@@ -383,22 +392,17 @@ body {
     height: 100%;
     width: 100%;
   }
-
-  .project-name {
-    margin-left: 20px;
-  }
-
   .para {
     width: 85%;
-    margin-left: 20px;
+    padding-left: 1px;
   }
 }
 
 @media screen and (min-width: 1640px) and (max-width: 1920px) {
   .nav {
-    width: 98vw;
+    width: 100%;
     display: grid;
-    padding-left: 75px;
+    padding-left: 68px;
   }
 
   .lg-sz {
@@ -406,21 +410,13 @@ body {
   }
 
   .page-heading {
-    padding-left: 78px;
+    padding-left: 68px;
   }
 
   .secondary {
     opacity: 0.5;
     color: gray;
     font-size: 20px;
-  }
-
-  .hr-line {
-    width: 95vw;
-    height: 0px;
-    margin: 20px auto 20px;
-    border: 1px solid grey;
-    opacity: 0.3;
   }
 
   .card {
@@ -439,7 +435,7 @@ body {
     width: 100%;
   }
   .project-name {
-    margin-left: 27px;
+    margin-left: 17px;
     padding: 10px 0px;
     font-family: sans-serif;
     font-size: x-large;
@@ -449,20 +445,15 @@ body {
   .para {
     width: 90%;
     font-size: small;
-    margin-left: 27px;
+    margin-left: 17px;
   }
 
   .hr-line {
-    width: 90vw;
+    width: 89%;
     height: 0px;
-    margin: 20px auto 20px;
+    margin: 20px 0px 20px 60px;
     border: 1px solid grey;
-    opacity: 0.3;
-  }
-  .bottom-hr {
-    width: 90vw;
-    margin: 20px 32px 40px;
-    opacity: 0.5;
+    opacity: 0.2;
   }
 
   .footer {
@@ -470,11 +461,11 @@ body {
   }
 }
 
-@media screen and (min-width: 1921px) and (max-width: 2450px) {
+@media screen and (min-width: 1921px) and (max-width: 2550px) {
   .nav {
-    width: 98vw;
+    width: 100%;
     display: grid;
-    padding-left: 43px;
+    padding-left: 68px;
   }
 
   .lg-sz {
@@ -482,7 +473,7 @@ body {
   }
 
   .page-heading {
-    padding-left: 43px;
+    padding-left: 68px;
   }
 
   .secondary {
@@ -492,18 +483,12 @@ body {
   }
 
   .hr-line {
-    width: 85vw;
+    width: 91%;
     height: 0px;
-    margin: 20px auto 20px;
+    margin: 20px 0px 20px 60px;
     border: 1px solid grey;
-    opacity: 0.3;
+    opacity: 0.2;
   }
-  .bottom-hr {
-    width: 90vw;
-    margin: 20px 40px 40px;
-    opacity: 0.5;
-  }
-
   .card {
     display: grid;
     place-items: center;
